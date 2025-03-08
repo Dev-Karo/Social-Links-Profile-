@@ -3,88 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Social links profile</title>
-    <!-- CSS -->
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
-    <!-- Profile card -->
-    <div
-      class="mx-auto text-center flex flex-col gap-8 bg-gray-800 py-10 my-32 rounded-xl w-96"
-    >
-      <div class="flex flex-col gap-6">
-        <div>
-          <img
-            src="assets/images/karo-james (1).jpg"
-            alt=""
-            class="w-24 rounded-full mx-auto"
-          />
+  <body class="bg-gray-900 min-h-screen flex flex-col justify-between p-4">
+    <!-- Main content container -->
+    <main class="flex-grow flex items-center justify-center">
+      <!-- Profile card -->
+      <div
+        class="mx-auto text-center flex flex-col gap-8 bg-gray-800 py-10 px-6 rounded-xl max-w-sm w-full"
+      >
+        <!-- Profile image -->
+        <div class="flex flex-col gap-6">
+          <div>
+            <img
+              src="assets/images/karo-james (1).jpg"
+              alt="Profile picture of Oghenekaro Abraham Ohwo"
+              class="w-24 h-24 rounded-full mx-auto"
+            />
+          </div>
+
+          <!-- User information -->
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <h1 class="text-white text-2xl font-medium">
+                Oghenekaro Abraham Ohwo
+              </h1>
+              <i class="text-greenStyle text-sm font-semibold"
+                >Delta State, Nigeria.</i
+              >
+            </div>
+            <i class="text-white text-base"
+              >"Front-end developer
+              <span class="text-greenStyle">@META.</span>"</i
+            >
+          </div>
         </div>
 
-        <div class="flex flex-col gap-6">
-          <div class="flex flex-col gap-2">
-            <h1 class="text-whiteStyle text-2xl font-medium">
-              Oghenekaro Abraham Ohwo
-            </h1>
-            <i class="text-greenStyle text-sm font-semibold">Delta, Ughelli</i>
-          </div>
-          <i class="text-whiteStyle text-base"
-            >"Front-end developer
-            <span class="text-greenStyle">@META.</span>"</i
-          >
-        </div>
-      </div>
-      <div class="flex flex-col gap-6 text-whiteStyle text-base font-semibold">
-        <span>
+        <!-- Social media links -->
+        <div
+          class="flex flex-col gap-4 text-white text-base font-semibold w-full"
+        >
+          <!-- GitHub -->
           <a href="https://github.com/Dev-Karo" target="_blank">
-            <button class="w-80 py-3 rounded-lg btn">GitHub</button>
+            <button
+              class="btn w-full max-w-xs sm:max-w-md md:max-w-lg py-3 rounded-lg"
+            >
+              GitHub
+            </button>
           </a>
-        </span>
-        <span>
+
+          <!-- Frontend Mentor -->
           <a
             href="https://www.frontendmentor.io/profile/Dev-Karo"
             target="_blank"
           >
-            <button class="w-80 py-3 rounded-lg btn">Frontend Mentor</button>
+            <button
+              class="btn w-full max-w-xs sm:max-w-md md:max-w-lg py-3 rounded-lg"
+            >
+              Frontend Mentor
+            </button>
           </a>
-        </span>
-        <span>
+
+          <!-- LinkedIn -->
           <a
             href="https://www.linkedin.com/in/oghenekaro-abraham-ohwo-a56599328/"
             target="_blank"
           >
-            <button class="w-80 py-3 rounded-lg btn">LinkedIn</button>
+            <button
+              class="btn w-full max-w-xs sm:max-w-md md:max-w-lg py-3 rounded-lg"
+            >
+              LinkedIn
+            </button>
           </a>
-        </span>
-        <span>
+
+          <!-- Twitter -->
           <a href="https://x.com/Incredible_Karo" target="_blank">
-            <button class="w-80 py-3 rounded-lg btn">Twitter</button>
+            <button
+              class="btn w-full max-w-xs sm:max-w-md md:max-w-lg py-3 rounded-lg"
+            >
+              Twitter
+            </button>
           </a>
-        </span>
-        <span>
+
+          <!-- Instagram -->
           <a href="https://www.instagram.com/karo_james/" target="_blank">
-            <button class="w-80 py-3 rounded-lg btn">Instagram</button>
+            <button
+              class="btn w-full max-w-xs sm:max-w-md md:max-w-lg py-3 rounded-lg"
+            >
+              Instagram
+            </button>
           </a>
-        </span>
+        </div>
       </div>
-    </div>
-    <footer>
-      <div class="text-whiteStyle mx-auto text-center p-5">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a class="text-greenStyle" href="#">oghenekaro-abraham-ohwo</a>.
-      </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="text-white text-center p-5">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a class="text-greenStyle" href="#">oghenekaro-abraham-ohwo</a>.
     </footer>
 
     <script src="./src/script.js"></script>
